@@ -43,6 +43,7 @@ public class ExampleJavaTestClass extends AbstractJavaSamplerClient implements S
             result.setSuccessful( true );
             result.setResponseMessage( "Successfully performed action" );
             result.setResponseCodeOK(); // 200 code
+            throw new Exception();
         } catch (Exception e) {
             result.sampleEnd(); // stop stopwatch
             result.setSuccessful( false );
