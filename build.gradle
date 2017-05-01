@@ -31,7 +31,3 @@ dependencies {
 	compile group: 'org.apache.jmeter', name: 'ApacheJMeter_java', version: '2.6'
     testCompile("junit:junit")
 }
-
-jmeter {
-  jmTestFiles = [file("src/test/java/jmeter/PeticionJava.jmx")] //if jmx file is not in the default location
-}
