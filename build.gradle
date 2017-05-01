@@ -7,7 +7,12 @@
  */
 
 // Apply the java-library plugin to add support for Java Library
+plugins {
+  id "net.foragerr.jmeter" version "1.0.5-2.13"
+}
+
 apply plugin: 'java-library'
+apply plugin: 'net.foragerr.jmeter'
 
 jar {
     baseName = 'test'
